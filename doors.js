@@ -40,7 +40,7 @@
 		var newImages = [];
 		Object.keys(options.images).forEach(function(img){
 
-			newImages.push({url:'/img/'+img, x: options.images[img][0],y: options.images[img][1]})
+			newImages.push({url:'img/'+img, x: options.images[img][0],y: options.images[img][1]})
 
 		})
 
@@ -179,7 +179,7 @@
 				return;
 			} 									
 			var image_info = get_image_info(image_index);
-			$('#src-link').attr('href','https://dp.la/item/'+image_info.path.replace('/img/','').replace('.jpg','').replace('.jpge',''))
+			$('#src-link').attr('href','https://dp.la/item/'+image_info.path.replace('img/','').replace('.jpg','').replace('.jpge',''))
 
 			if (image_info.loaded) {						
 				// var r = interpolate_rect(image_info.r1, image_info.r2, anim);
